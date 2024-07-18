@@ -1,0 +1,100 @@
+---
+permalink: protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html 
+sidebar: sidebar 
+keywords: credentials 
+summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. SAP HANA 데이터베이스용 SnapCenter 플러그인은 Windows 및 Linux 환경 모두에서 사용할 수 있습니다. 
+---
+= 호스트를 추가하고 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하기 위한 사전 요구사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. SAP HANA 데이터베이스용 SnapCenter 플러그인은 Windows 및 Linux 환경 모두에서 사용할 수 있습니다.
+
+* 호스트에 Java 1.8 64비트를 설치해야 합니다.
++
+
+NOTE: IBM Java는 지원되지 않습니다.
+
+* 호스트에 SAP HANA 데이터베이스 대화형 터미널(HDBSQL 클라이언트)을 설치해야 합니다.
+* Windows의 경우 플러그인 생성 서비스는 ""LocalSystem"" Windows 사용자를 사용하여 실행해야 합니다. 이는 SAP HANA 데이터베이스용 플러그인이 도메인 관리자로 설치된 경우 기본 동작입니다.
+* Windows의 경우 사용자 저장소 키를 시스템 사용자로 만들어야 합니다.
+* Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자의 경우 호스트에서 UAC를 비활성화해야 합니다. Microsoft Windows용 SnapCenter 플러그인은 기본적으로 Windows 호스트에 SAP HANA 플러그인을 사용하여 구축됩니다.
+* Linux 호스트의 경우 HDB Secure User Store 키는 HDBSQL OS 사용자로 액세스됩니다.
+* SnapCenter 서버는 SAP HANA 데이터베이스 호스트용 플러그인의 8145 또는 맞춤형 포트에 액세스할 수 있어야 합니다.
+
+
+
+
+== Windows 호스트
+
+* 원격 호스트에 대한 로컬 로그인 권한이 있는 로컬 관리자 권한이 있는 도메인 사용자가 있어야 합니다.
+* Windows 호스트에 SAP HANA 데이터베이스용 플러그인을 설치하는 동안 Microsoft Windows용 SnapCenter 플러그인이 자동으로 설치됩니다.
+* 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
+* Windows 호스트에 Java 1.8 64비트를 설치해야 합니다.
++
+http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
+
++
+https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
+
+
+
+
+
+== Linux 호스트
+
+* 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
+* Linux 호스트에 Java 1.8 64비트를 설치해야 합니다.
++
+http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
+
++
+https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
+
+* Linux 호스트에서 실행되는 SAP HANA 데이터베이스의 경우 SAP HANA 데이터베이스용 플러그인을 설치하는 동안 UNIX용 SnapCenter 플러그인은 자동으로 설치됩니다.
+* 플러그인 설치를 위한 기본 셸은 * bash * 이어야 합니다.
+
+
+
+
+== 보조 명령
+
+SAP HANA용 SnapCenter 플러그인에서 추가 명령을 실행하려면 파일에 해당 명령을 포함해야 `allowed_commands.config` 합니다.
+
+`allowed_commands.config` 파일은 SnapCenter Plug-in for SAP HANA 디렉토리의 "etc" 하위 디렉토리에 있습니다.
+
+.Windows 호스트
+기본값: `C:\Program Files\NetApp\SnapCenter\HANA\etc\allowed_commands.config`
+
+사용자 지정 경로: `<Custome_Directory>\NetApp\SnapCenter\HANA\etc\allowed_commands.config` Windows 호스트:
+
+.Linux 호스트
+기본값: `/opt/NetApp/snapcenter/scc/etc/allowed_commands.config`
+
+사용자 지정 경로: `<Custome_Directory>/NetApp/snapcenter/scc/etc/allowed_commands.config`
+
+플러그인 호스트에서 추가 명령을 허용하려면 편집기에서 파일을 엽니다 `allowed_commands.config` . 각 명령을 별도의 줄에 입력합니다. 이름은 대소문자를 구분하지 않습니다. 예를 들면, 다음과 같습니다.
+
+명령: mount
+
+명령: 마운트 해제
+
+정규화된 경로 이름을 지정해야 합니다. 공백이 포함된 경우, 경로 이름은 따옴표(")로 묶어야 합니다. 예를 들면, 다음과 같습니다.
+
+명령: "C:\Program Files\NetApp\SnapCreator Commands\sdcli.exe"
+
+명령: myscript.bat
+
+ `allowed_commands.config`파일이 없으면 명령 또는 스크립트 실행이 차단되고 워크플로가 실패하고 다음 오류가 발생합니다.
+
+"[/mnt/mount -a] 실행이 허용되지 않습니다. 플러그인 호스트의 %s 파일에 명령을 추가하여 권한을 부여하십시오."
+
+명령 또는 스크립트가 에 없으면 `allowed_commands.config`명령 또는 스크립트 실행이 차단되고 워크플로가 실패하고 다음 오류가 발생합니다.
+
+"[/mnt/mount -a] 실행이 허용되지 않습니다. 플러그인 호스트의 %s 파일에 명령을 추가하여 권한을 부여하십시오."
+
+
+NOTE: 와일드카드 항목(*)을 사용하여 모든 명령을 허용해서는 안 됩니다.
