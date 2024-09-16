@@ -2383,12 +2383,6 @@
   <block id="6d84e3718084e0db779da4ff8791a2f2" category="doc">지원되는 브라우저</block>
   <block id="986c37480b1f1c2e443504b38b6361b4" category="list-text">크롬</block>
   <block id="9b5c943f3d46ea12de31408c6912a1e9" category="paragraph">v66을 사용하는 경우 SnapCenter GUI를 시작하지 못할 수 있습니다.</block>
-  <block id="ebe4f447bd3316e4f81ab2a6d2f26810" category="list-text">Internet Explorer 를 참조하십시오</block>
-  <block id="74e84f9442fdb7717385ee092400869a" category="paragraph">IE 10 또는 이전 버전을 사용하는 경우 SnapCenter UI가 제대로 로드되지 않습니다. IE 11로 업그레이드해야 합니다.</block>
-  <block id="8b45fc0c82a493bebd2ae705881299e0" category="list-text">기본 수준 보안만 지원됩니다.</block>
-  <block id="8c39fdaac8e8c7ec5824fd1acda14c9a" category="paragraph">Internet Explorer 보안 설정을 변경하면 상당한 브라우저 표시 문제가 발생합니다.</block>
-  <block id="c5c74f2a0046f37ca93f6d8e3c775364" category="list-text">Internet Explorer 호환성 보기를 비활성화해야 합니다.</block>
-  <block id="a5c41f715c1b8a880253846c025624e9" category="list-text">Microsoft Edge를 참조하십시오</block>
   <block id="0399ed9d4322925cd652419c6e80ccbb" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="6b3ef4eef08ac0feed960a06e1cce7e2" category="inline-link-rx"></block>.</block>
   <block id="ba7cbf773bd0f0004c4d97fba5034cdb" category="summary">지원되는 스토리지 시스템, 애플리케이션 및 데이터베이스를 알고 있어야 합니다.</block>
   <block id="1e1ed4854c77f284f3e97b0843b6e570" category="doc">지원되는 스토리지 시스템 및 애플리케이션</block>
@@ -9028,4 +9022,7 @@
   <block id="3dd76484b16fcbb6b760975e3feaba70" category="sidebar">Oracle 데이터베이스 클론 생성</block>
   <block id="9e19caeb431a5e29a1a63e3cee4b36c9" category="inline-link">ONTAP을 사용한 Oracle 데이터 보호</block>
   <block id="d118010bb2b3542007c6749bfd237123" category="list-text"><block ref="d118010bb2b3542007c6749bfd237123" category="inline-link-rx"></block></block>
+  <block id="5438f8c09e5ea2be33bd2ce16c8b5123" category="admonition">SnapCenter 5.0에서는 SVM admin 사용자가 REST API를 통해서만 지원됩니다. 가상 서버 관리자가 아닌 다른 관리자를 사용하여 역할을 생성하려면 ZAPI를 사용해야 합니다.</block>
+  <block id="f5a551e6a3161ca6d9ee33d926d734d5" category="list-text">Microsoft Edge 110.0.1587.17 이상</block>
+  <block id="3955db71dd681bf23ceee85c567a0129" category="admonition">SnapCenter 5.0에서는 클러스터 관리자가 REST API를 사용하는 경우에만 지원됩니다. 비 클러스터 관리자를 사용하여 역할을 생성하려면 ZAPI를 사용해야 합니다.</block>
 </blocks>
