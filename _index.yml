@@ -77,7 +77,7 @@ indexpage:
   - title: 더 많은 리소스
     links:
     - title: cmdlet 참조 가이드
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895
+      url: https://docs.netapp.com/us-en/snapcenter-cmdlets-50/index.html
     - title: 명령 참조 가이드
       url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886896
     - title: 이전 버전의 SnapCenter에 대한 문서
