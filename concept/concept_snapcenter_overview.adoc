@@ -55,9 +55,6 @@ ONTAP 시스템에서 실행되는 Microsoft Exchange Server, Microsoft SQL Serv
 +
 사용자 정의 SnapCenter 플러그인을 만들 수 있는 프레임워크를 제공하여 다른 표준 또는 사용자 지정 애플리케이션 및 데이터베이스에서도 데이터 보호가 지원됩니다. 따라서 동일한 단일 창에서 다른 애플리케이션과 데이터베이스의 데이터를 보호할 수 있습니다. NetApp은 이 프레임워크를 활용하여 NetApp 자동화 스토어에서 IBM DB2, MongoDB, MySQL용 SnapCenter 맞춤형 플러그인을 출시했습니다.
 
-+
-https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"^]
-
 * 정책 기반 백업
 +
 정책 기반 백업은 NetApp Snapshot 기술을 활용하여 빠르고 공간 효율적인 애플리케이션 정합성이 보장된 디스크 기반 백업을 생성합니다. 필요에 따라 기존 보호 관계를 업데이트하여 보조 스토리지에 대한 이러한 백업을 자동으로 보호할 수 있습니다.
@@ -86,7 +83,7 @@ SnapCenter에는 모든 오케스트레이션 소프트웨어와 통합할 수 �
 REST API에 대한 자세한 내용은 를 https://docs.netapp.com/us-en/snapcenter/sc-automation/overview_rest_apis.html["REST API 개요"]참조하십시오.
 
 +
-Windows cmdlet에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/snapcenter-cmdlets-50/index.htmllllll["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]참조하십시오.
+Windows cmdlet에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/snapcenter-cmdlets-50/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]참조하십시오.
 
 +
 UNIX 명령에 대한 자세한 내용은 을 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886896["SnapCenter 소프트웨어 명령 참조 가이드"^]참조하십시오.
@@ -177,9 +174,6 @@ SnapCenter는 SnapCenter 서버 및 SnapCenter 플러그인으로 구성됩니�
 
 
 * SnapCenter 맞춤형 플러그인
-+
-사용자 지정 플러그인은 커뮤니티에서 지원되며 에서 다운로드할 수 https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"^]있습니다.
-
 
 
 SnapCenter Plug-in for VMware vSphere(이전의 NetApp Data Broker)는 가상화된 데이터베이스 및 파일 시스템에서 SnapCenter 데이터 보호 작업을 지원하는 독립 실행형 가상 어플라이언스입니다.
@@ -286,7 +280,6 @@ Linux 또는 Windows
  a| 
 맞춤형 플러그인
  a| 
-https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"^]
  a| 
 파일 시스템 백업의 경우 Windows용 플러그인
  a| 
@@ -369,8 +362,6 @@ SAN 디바이스에 구축된 SAN 네이티브 디바이스, 파일 시스템 �
 * 다른 볼륨에 백업 세트의 미러 복제본을 생성하고 D2D 백업 복제를 수행할 수 있습니다.
 * Windows 환경과 Linux 환경을 모두 지원합니다. Windows 환경에서 사용자 지정 플러그인을 통한 사용자 지정 애플리케이션은 필요에 따라 Microsoft Windows용 SnapCenter 플러그인을 사용하여 파일 시스템의 일관된 백업을 수행할 수 있습니다.
 
-
-SnapCenter 소프트웨어용 MySQL, DB2 및 MongoDB 맞춤형 플러그인 샘플은 에서 다운로드할 수 있습니다 https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"^].
 
 
 NOTE: MySQL, DB2 및 MongoDB 맞춤형 플러그인은 NetApp 커뮤니티를 통해서만 지원됩니다.

@@ -7,7 +7,7 @@ summary: 해결된 문제, 알려진 문제, 주의 및 제한 사항을 포함�
 = 릴리스 정보
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
