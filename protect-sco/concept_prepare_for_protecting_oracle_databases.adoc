@@ -38,13 +38,7 @@ NOTE: SnapCenter은 서로 다른 클러스터에서 동일한 이름의 여러 
 ** SVM에 여러 데이터 경로(LIF)가 있을 경우 SnapCenter은 NFS 클론 복제된 볼륨을 마운트하기 위해 적절한 데이터 경로(LIF)를 선택합니다. 그러나 특정 데이터 경로(LIF)를 지정하려면 Set-SvmPreferredDataPath CLI를 실행해야 합니다. 자세한 내용은 명령 참조 가이드를 참조하십시오.
 
 
-* SAN 환경에 Oracle 데이터베이스가 있는 경우 다음 가이드에 설명된 권장 사항에 따라 SAN 환경을 구성해야 합니다.
-+
-** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547957["Linux Unified Host Utilities의 권장 호스트 설정"^]
-** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547958["ONTAP 스토리지에 Linux 호스트 사용"^]
-** https://library.netapp.com/ecm/ecm_download_file/ECMP1119218["AIX 호스트 유틸리티의 영향을 받는 호스트 설정"^]
-
-
+* SAN 환경에 Oracle 데이터베이스가 있는 경우 에 설명된 권장 사항에 따라 SAN 환경이 구성되어 https://library.netapp.com/ecm/ecm_download_file/ECMP1119218["AIX 호스트 유틸리티의 영향을 받는 호스트 설정"^] 있는지 확인합니다.
 * Oracle Linux 또는 RHEL 운영 체제의 LVM에 Oracle 데이터베이스가 있는 경우 최신 버전의 LVM(Logical Volume Management)을 설치합니다.
 * Oracle용 SnapManager를 사용하고 있고 Oracle 데이터베이스용 SnapCenter 플러그인으로 마이그레이션하려는 경우 sccli 명령 sc-migrate 를 사용하여 프로필을 SnapCenter의 정책 및 리소스 그룹으로 마이그레이션할 수 있습니다.
 * 백업 복제를 원하는 경우 ONTAP에서 SnapMirror 및 SnapVault를 구성합니다

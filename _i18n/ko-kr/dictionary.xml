@@ -5674,13 +5674,7 @@
   <block id="e3bcbd4b72b9abcfba6dd89fa833c9d7" category="list-text">애플리케이션 방화벽의 시간 초과 값을 3시간 이상으로 설정해야 합니다.</block>
   <block id="2f66d67da390e5c77db3fc5e681393ab" category="list-text">NFS 환경에 Oracle 데이터베이스가 있는 경우 마운트, 클론, 검증 및 복원 작업을 수행하려면 운영 스토리지 또는 2차 스토리지에 대해 NFS 데이터 LIF를 하나 이상 구성해야 합니다.</block>
   <block id="904e44e9990e7591adda05fc061919d3" category="list-text">SVM에 여러 데이터 경로(LIF)가 있을 경우 SnapCenter은 NFS 클론 복제된 볼륨을 마운트하기 위해 적절한 데이터 경로(LIF)를 선택합니다. 그러나 특정 데이터 경로(LIF)를 지정하려면 Set-SvmPreferredDataPath CLI를 실행해야 합니다. 자세한 내용은 명령 참조 가이드를 참조하십시오.</block>
-  <block id="0d38af714784f793aaf023f367e4c39b" category="list-text">SAN 환경에 Oracle 데이터베이스가 있는 경우 다음 가이드에 설명된 권장 사항에 따라 SAN 환경을 구성해야 합니다.</block>
-  <block id="26b193fe4fa8dbe180bbe20800729e6b" category="inline-link">Linux Unified Host Utilities의 권장 호스트 설정</block>
-  <block id="e705af1c7f38eac38e2f493fc039f70e" category="list-text"><block ref="e705af1c7f38eac38e2f493fc039f70e" category="inline-link-rx"></block></block>
-  <block id="e41304e7d689f8fed5c98620228184cf" category="inline-link">ONTAP 스토리지에 Linux 호스트 사용</block>
-  <block id="4261289fb5bad467a2ad973679d86c14" category="list-text"><block ref="4261289fb5bad467a2ad973679d86c14" category="inline-link-rx"></block></block>
   <block id="b1ada800560d7bd73c2da9a36d6ae229" category="inline-link">AIX 호스트 유틸리티의 영향을 받는 호스트 설정</block>
-  <block id="9e202af09678a2aeb1c20235b8ed2aad" category="list-text"><block ref="9e202af09678a2aeb1c20235b8ed2aad" category="inline-link-rx"></block></block>
   <block id="ba09c94fed381b580a726fc94531b160" category="list-text">Oracle Linux 또는 RHEL 운영 체제의 LVM에 Oracle 데이터베이스가 있는 경우 최신 버전의 LVM(Logical Volume Management)을 설치합니다.</block>
   <block id="8770246977269a639c8c2818412dc3ac" category="list-text">Oracle용 SnapManager를 사용하고 있고 Oracle 데이터베이스용 SnapCenter 플러그인으로 마이그레이션하려는 경우 sccli 명령 sc-migrate 를 사용하여 프로필을 SnapCenter의 정책 및 리소스 그룹으로 마이그레이션할 수 있습니다.</block>
   <block id="4c893189fecc8b6e5c41ae931ffd7f89" category="list-text">백업 복제를 원하는 경우 ONTAP에서 SnapMirror 및 SnapVault를 구성합니다</block>
@@ -9014,4 +9008,5 @@
   <block id="a67e0e0c5dea92d024cd90ac412f110f" category="paragraph">VMware vSphere용 SnapCenter 플러그인 제거에 대한 자세한 내용은 https://docs.NetApp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_remove_plugin.html [Remove SnapCenter Plug-in for VMware vSphere] 를 참조하십시오.</block>
   <block id="9370db25bd6766721eb2110afcff56b0" category="image-alt">SnapCenter 업그레이드 워크플로우</block>
   <block id="d127c7070231e882bd97e8f2760d0a4f" category="sidebar">SnapCenter 소프트웨어 설명서</block>
+  <block id="90fd1a3ce44c78f7c0d4b87a3e5f6ad1" category="list-text">SAN 환경에 Oracle 데이터베이스가 있는 경우 에 설명된 권장 사항에 따라 SAN 환경이 구성되어<block ref="c4f7653512cf02eacb80aa4d3d06e4f7" category="inline-link-rx"></block> 있는지 확인합니다.</block>
 </blocks>
