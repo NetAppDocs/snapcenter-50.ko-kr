@@ -1117,7 +1117,6 @@
   <block id="3f897d901d24f02777ff0994b7823d1a" category="list-text">ONTAP FAS, AFF 또는 ASA 운영 및 2차 시스템에 있으며 로컬 StorageGRID 오브젝트 스토리지로 보호되는 데이터</block>
   <block id="bc549d53e5e7a7aeb8a41511751a99f2" category="list-text">하이브리드 클라우드의 사내 로 다음을 보호:</block>
   <block id="f5c37d824040662f50cbb8a32d77182d" category="list-text">ONTAP FAS, AFF 또는 ASA 기본 시스템에 있고 Cloud Volumes ONTAP에 복제된 데이터입니다</block>
-  <block id="f7b38c62b0e74d318a255bc3094cf531" category="list-text">ONTAP FAS, AFF 또는 ASA 운영 및 2차 시스템에 있고 클라우드의 오브젝트 및 아카이브 스토리지로 보호되는 데이터(BlueXP 백업 및 복구 통합 사용)</block>
   <block id="ca5570a253e3c0a27562c65c06bb6125" category="list-text">퍼블릭 클라우드에서 다음을 보호합니다.</block>
   <block id="b340c2b4a7a978a510c8ebb351622143" category="list-text">Cloud Volumes ONTAP(이전의 ONTAP 클라우드) 운영 시스템에 있는 데이터</block>
   <block id="b380e442ff5c6e48e283af8b6f99806f" category="list-text">ONTAP용 Amazon FSX에 있는 데이터입니다</block>
@@ -9009,4 +9008,5 @@
   <block id="c23d56866a5b11fd0d8dc189fcf21298" category="list-text"><block ref="341e3fddad4b27511133b6917a75bb8a" category="inline-link-rx"></block></block>
   <block id="57cf9c4ee485623172a5c60cbee423a4" category="paragraph"><block ref="96716f545c5cf1a209bf10c1a798ce38" category="inline-link-macro-rx"></block>비디오를 참조하십시오.</block>
   <block id="2af0fc8c21c11cf5ed04e0063f53931e" category="paragraph"><block ref="2af0fc8c21c11cf5ed04e0063f53931e" category="inline-link-rx"></block></block>
+  <block id="ea1c96f839915f73d25b910bbc92b734" category="list-text">NetApp 백업 및 복구 통합을 사용하여 ONTAP FAS, AFF 또는 ASA 기본 및 보조 시스템에 있는 데이터를 클라우드의 개체 및 아카이브 스토리지로 보호합니다.</block>
 </blocks>
